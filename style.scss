@@ -2,10 +2,10 @@
 * {
     margin: 0;
     padding: 0;
-   box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-@mixin myFlex {
+%myFlex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,15 +16,15 @@ body {
     font-size: $fontSize;
     height: 100vh;
     width: 100vw;
-    @include myFlex();
+    @extend %myFlex;
 }
 
 .container {
     height: 840px;
     width: 500px;
-    padding: 20px;
+    padding: 1.2rem;
     border-radius: 50px;
-    @include myFlex();
+    @extend %myFlex;
     flex-direction: column;
     .empty {
         height: 250px;
@@ -36,7 +36,10 @@ body {
         width: 440px;
         margin: auto;
         display: grid;
-        grid-template-columns: repeat(4,1fr);
-
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .button {
+        border-radius: 50%;
+        @extend %myFlex;
     }
 }

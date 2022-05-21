@@ -4,24 +4,24 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 45px;
-  height: 100vh;
-  width: 100vw;
+.container .button, .container, body {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 45px;
+  height: 100vh;
+  width: 100vw;
+}
+
 .container {
   height: 840px;
   width: 500px;
-  padding: 20px;
+  padding: 1.2rem;
   border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 .container .empty {
@@ -35,6 +35,9 @@ body {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+.container .button {
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
