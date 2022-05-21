@@ -1,18 +1,18 @@
+.container .content .button, .container, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.container .button, .container, body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 body {
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 45px;
+  font-size: 2.8rem;
   height: 100vh;
   width: 100vw;
 }
@@ -23,6 +23,7 @@ body {
   padding: 1.2rem;
   border-radius: 50px;
   flex-direction: column;
+  background-color: black;
 }
 .container .empty {
   height: 250px;
@@ -32,12 +33,44 @@ body {
 .container .content {
   height: 540px;
   width: 440px;
-  margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  cursor: pointer;
 }
-.container .button {
+.container .content .b1 {
+  background-color: #A5A5A5 !important;
+  color: black !important;
+}
+.container .content .b2 {
+  background-color: #A5A5A5 !important;
+  color: black !important;
+}
+.container .content .b3 {
+  background-color: #A5A5A5 !important;
+  color: black !important;
+}
+.container .content :nth-child(4n):not(:last-child) {
+  background-color: #F1A33C;
+}
+.container .content .button:hover {
+  opacity: 0.5;
+}
+.container .content .button {
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
+  background-color: #333333;
+  color: white;
+  transition: all 0.3s;
+}
+.container .content .b17 {
+  height: 100px;
+  width: 215px;
+  grid-column: 1/3;
+  border-radius: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 2.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

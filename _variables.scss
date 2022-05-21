@@ -1,9 +1,15 @@
 
 
-$fontSize: 45px;
+$fontSize: 2.8rem;
 $fontFamily: "Helvetica Neue", sans-serif;
 $orange: #F1A33C;
 $lightGray: #A5A5A5;
 $darkGray: #333333;
+
+%myFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
